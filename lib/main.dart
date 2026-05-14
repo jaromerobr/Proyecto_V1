@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const BaratitoApp());
@@ -15,14 +16,15 @@ class BaratitoApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color.fromARGB(255, 35, 97, 36),
+          seedColor: const Color(0xFF2C5F2D),
           brightness: Brightness.light,
         ),
+        textTheme: GoogleFonts.poppinsTextTheme(),
       ),
-      home: const HomeScreen(),
-    );
-  }
-}
+      home: const HomeScreen(), // ← faltaba esto
+    ); // ← cierre del MaterialApp
+  } // ← cierre del build
+} // ← cierre de la clase
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
