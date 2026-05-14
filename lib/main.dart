@@ -118,7 +118,5 @@ class HomeScreen extends StatelessWidget {
         ),
       ),
     );
-  }git add .
-git commit -m "feat: Sprint Cero - Baratito "
-git push origin main
+  }
 }
